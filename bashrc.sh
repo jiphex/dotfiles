@@ -23,7 +23,6 @@ YELLOW='\[\e[1;33m\]'
 NC='\[\e[0m\]' # No Colour
 NOCOL=$NC
 
-# First test if git-status exists
 # Do the prompt:
 export PS1="${GREEN}\h \$${NC} "
 
@@ -65,3 +64,11 @@ if [ -d ~/bin ]; then
 	PATH="~/bin:$PATH"
 fi
 export PATH
+
+# Let's do some git stuff
+if [ -f ~/.gitvimrc ]; then
+	export GIT_EDITOR="vim -S ~/.gitvimrc +start"
+else
+	# If .gitvimrc doesn't exist then just start vim and don't worry about the hard line-break
+	export GIT_EDITOR="vim +start"
+fi
