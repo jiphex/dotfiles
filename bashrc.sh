@@ -1,3 +1,4 @@
+#! /bin/bash
 # James Hannah - Bash Prompt.
 
 # If no prompt, quit here.
