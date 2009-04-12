@@ -53,7 +53,7 @@ alias e='$EDITOR'
 alias g='git'
 
 # Some generic additions to the path.
-PATH="/usr/local/bin:$PATH"
+PATH="/opt/local/bin:/opt/bin:/usr/local/bin:$PATH"
 
 # Let's do some clever ssh completion:
 # (Commented for now for compatibility)
