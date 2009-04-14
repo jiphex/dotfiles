@@ -35,6 +35,9 @@ shopt -s histappend # don't overwrite history - append instead
 # Make sure we check the window size after each command:
 shopt -s checkwinsize
 
+# Fix spelling errors in cd
+shopt -s cdspell
+
 # Colour ls
 eval "`dircolors -b`"
 alias ls='ls --color=auto'
