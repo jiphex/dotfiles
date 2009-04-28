@@ -2,7 +2,7 @@
 # James Hannah - Bash Prompt.
 
 # If no prompt, quit here.
-[ -z "$PS1" ] && return
+[ -z "$PS1" ] && exit
 
 # Get the important things sorted first
 export EDITOR=vim
@@ -25,7 +25,7 @@ NC='\[\e[0m\]' # No Colour
 NOCOL=$NC
 
 # Do the prompt:
-export PS1="${GREEN}\h \$${NC} "
+if [ $UID -eq 0 ]; then export PS1="${RED}\h \$${NC} "; else export PS1="${GREEN}\h \$${NC} "; fi
 
 # Fiddle with the history
 export HISTCONTROL=ignoredups #no dups
