@@ -76,3 +76,8 @@ else
 	# If .gitvimrc doesn't exist then just start vim and don't worry about the hard line-break
 	export GIT_EDITOR="vim +start"
 fi
+
+# Load local bash script if it exists
+if [ -f ~/.bash_local ]; then
+	source ~/.bash_local
+fi
