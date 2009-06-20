@@ -82,3 +82,6 @@ fi
 if [ -f ~/.bash_local ]; then
 	source ~/.bash_local
 fi
+
+# Set vi mode
+set -o vi
