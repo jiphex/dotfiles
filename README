@@ -1,0 +1,12 @@
+DOTFILES :: James Hannah
+
+These are just my configuration files for various things.
+
+INSTALLATION
+
+Rename these to the correct names:
+
+bashrc.sh ------> .bashrc
+gitvimrc.vim ---> .gitvimrc
+vimrc.vim ------> .vimrc
+zshrc.zsh ------> .zshrc
