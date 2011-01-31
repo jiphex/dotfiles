@@ -14,8 +14,8 @@ set ignorecase
 set smartcase
 set incsearch
 
-" make tab do real things
-inoremap <Tab> <C-T>
+" make tab do real things (updated to make <Tab> insert \t)
+inoremap <C-Tab> <C-T>
 inoremap <S-Tab> <C-D>
 
 " show stuff at the bottom right (commands as they are executed)
@@ -113,3 +113,5 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+set guifont=Consolas:h11:cANSI
