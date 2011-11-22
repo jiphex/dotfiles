@@ -43,9 +43,11 @@ filetype indent on
 
 " do spaces not tabs in python.
 autocmd filetype python set expandtab
+autocmd filetype ruby set sw=2
 
 " css coolness
-autocmd FileType css set smartindent
+autocmd filetype css set smartindent
+autocmd filetype ruby set smartindent
 
 " eww extra files, no thanks.
 set nobackup
@@ -70,7 +72,7 @@ set hidden
 " no wrapping lines thanks
 set nowrap
 " but we'll have hashes at the end of the line where we dont wrap.
-set listchars=tab:Â»Â·,trail:Â·,extends:#,nbsp:Â·
+set listchars=tab:»·,trail:·,extends:#,nbsp:·
 
 " tabs are 4 spaces ffs.
 set tabstop=4
@@ -114,4 +116,4 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-set guifont=Consolas:h11:cANSI
+set relativenumber
