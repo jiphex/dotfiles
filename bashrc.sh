@@ -64,6 +64,11 @@ PATH="/opt/local/bin:/opt/bin:/usr/local/bin:$PATH"
 # (Commented for now for compatibility)
 #complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
 
+# and regular bash completion
+if [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+
 # If ~/bin exists, add it to the path:
 if [ -d ~/bin ]; then
 	PATH="~/bin:$PATH"
@@ -85,3 +90,7 @@ fi
 
 # Set vi mode
 set -o vi
+
+DEBEMAIL="james.hannah@bytemark.co.uk"
+DEBFULLNAME="James Hannah"
+export DEBEMAIL DEBFULLNAME
