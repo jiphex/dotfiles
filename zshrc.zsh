@@ -72,7 +72,7 @@ setopt BASH_AUTO_LIST
 #zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # case-insensitive completion if we're on OSX as the underlying filesystem is case insensitive
-if [ -d /Applications ]; then
+if [ -d /TMP ]; then
 	zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 fi
 
