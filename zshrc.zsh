@@ -64,17 +64,16 @@ SAVEHIST=99999
 export LSCOLORS=Dxfxcxdxbxegedabagacad
 export CLICOLOR=CLICOLOR
 
-# some local path additions
-export PATH="/opt/local/bin:/Users/james/.gem/ruby/1.8/bin:$PATH"
-
 # do autocompletion like bash, double tab for competion
 setopt BASH_AUTO_LIST
 
 # completion cache, dont remember where this is from
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+#zstyle ':completion:*' use-cache on
+#zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # case-insensitive completion if we're on OSX as the underlying filesystem is case insensitive
 if [ -d /Applications ]; then
 	zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 fi
+
+test -f ~/.zshrc-local && source ~/.zshrc-local
