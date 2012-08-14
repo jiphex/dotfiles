@@ -45,9 +45,9 @@ filetype indent on
 autocmd filetype python set expandtab
 autocmd filetype ruby set sw=2
 
-" css coolness
-autocmd filetype css set smartindent
-autocmd filetype ruby set smartindent
+" css coolness - disabled as per goo.gl/XGhzo
+" autocmd filetype css set smartindent
+" autocmd filetype ruby set smartindent
 
 " eww extra files, no thanks.
 set nobackup
@@ -115,3 +115,6 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" faster terminals thanks
+set ttyfast
