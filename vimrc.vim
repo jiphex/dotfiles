@@ -118,3 +118,6 @@ map <right> <nop>
 
 " faster terminals thanks
 set ttyfast
+
+" not sure how this was ever missed
+set number
