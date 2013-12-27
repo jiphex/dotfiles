@@ -1,6 +1,7 @@
 # aliases - self explanatory
 alias vi="vim"
 alias ls="ls --color"
+alias remake="make -B"
 
 # ok, prompt is slightly complicated.
 setopt prompt_subst
