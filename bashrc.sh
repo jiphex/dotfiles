@@ -56,6 +56,7 @@ alias egrep='grep -E --color=auto'
 alias e='$EDITOR'
 alias g='git'
 alias csort='sort | uniq -c | sort -n' # column sort piped data
+alias remake="make -B"
 
 # Some generic additions to the path.
 PATH="/opt/local/bin:/opt/bin:/usr/local/bin:$PATH"
