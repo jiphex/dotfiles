@@ -55,8 +55,8 @@ set noswapfile
 " go on then, we'll take mouse support.
 set mouse=a
 
-" non-gash colour scheme
-colors evening
+" better colour scheme
+colors pablo
 
 " highlight search matches
 set hlsearch
