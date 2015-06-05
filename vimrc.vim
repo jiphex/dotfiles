@@ -121,3 +121,4 @@ set number
 
 " NSE scripts are actually LUA
 :autocmd BufNewFile,BufRead *.nse set filetype=lua
+set modelines=1

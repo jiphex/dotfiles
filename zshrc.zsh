@@ -102,3 +102,7 @@ if [ -d /TMP ]; then
 fi
 
 test -f ~/.zshrc-local && source ~/.zshrc-local
+
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+alias c=cd
