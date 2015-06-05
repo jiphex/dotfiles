@@ -41,13 +41,12 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" do spaces not tabs in python.
+" some things for specific filetypes
 autocmd filetype python set expandtab
-autocmd filetype ruby set sw=2
-
-" css coolness
-autocmd filetype css set smartindent
-autocmd filetype ruby set smartindent
+autocmd filetype ruby set sw=2 expandtab
+autocmd FileType yaml set sw=2 autoindent
+" for formatting git edit messages:
+autocmd FileType EDITMSG set formatoptions=tq textwidth=72
 
 " eww extra files, no thanks.
 set nobackup
@@ -56,8 +55,8 @@ set noswapfile
 " go on then, we'll take mouse support.
 set mouse=a
 
-" non-gash colour scheme
-colors evening
+" better colour scheme
+colors pablo
 
 " highlight search matches
 set hlsearch
@@ -95,8 +94,6 @@ set smarttab
 " load magic filetype stuff
 filetype on
 
-" for formatting git edit messages
-autocmd FileType EDITMSG set formatoptions=tq textwidth=72
 
 " ;w instead of <shift>:w
 nnoremap ; :
@@ -115,3 +112,12 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" faster terminals thanks
+set ttyfast
+
+" not sure how this was ever missed
+set number
+
+" NSE scripts are actually LUA
+:autocmd BufNewFile,BufRead *.nse set filetype=lua
