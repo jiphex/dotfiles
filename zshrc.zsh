@@ -17,6 +17,9 @@ PR_RESET="%{${reset_color}%}";
 export PS1='${PR_BRIGHT_GREEN}%m%# ${PR_RESET}'
 # prompt done
 
+# bulk move
+autoload zmv
+
 # doing the keyboard now
 
 # create a zkbd compatible hash;
