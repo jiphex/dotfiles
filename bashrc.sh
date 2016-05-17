@@ -95,3 +95,5 @@ set -o vi
 DEBEMAIL="james.hannah@bytemark.co.uk"
 DEBFULLNAME="James Hannah"
 export DEBEMAIL DEBFULLNAME
+
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
