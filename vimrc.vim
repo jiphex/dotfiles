@@ -118,6 +118,20 @@ set ttyfast
 
 " not sure how this was ever missed
 set number
+set relativenumber
 
 " NSE scripts are actually LUA
 :autocmd BufNewFile,BufRead *.nse set filetype=lua
+"
+" SLS files are YAML
+:autocmd BufNewFile,BufRead *.sls set filetype=yaml
+
+" magic line wrapping and make j/k go down a virtual line
+set wrap
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" Make Ctrl-e jump to the end of the current line in the insert mode. This is
+" handy when you are in the middle of a line and would like to go to its end
+" without switching to the normal mode.
+inoremap <C-e> <C-o>$
