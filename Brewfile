@@ -43,6 +43,9 @@ brew 'youtube-dl'
 brew 'whois'
 brew 'bytemark-client'
 
+cask 'mailmate'
+cask 'bonjour-browser'
+
 mas 'Xcode', id: 497799835
 mas 'Keynote', id: 409183694
 mas 'The Unarchiver', id: 425424353
