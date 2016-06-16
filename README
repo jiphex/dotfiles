@@ -10,3 +10,7 @@ bashrc.sh ------> .bashrc
 gitvimrc.vim ---> .gitvimrc
 vimrc.vim ------> .vimrc
 zshrc.zsh ------> .zshrc
+
+Then, for a Mac, run this in the dotfiles directory:
+
+brew bundle
