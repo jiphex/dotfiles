@@ -43,8 +43,9 @@ brew 'youtube-dl'
 brew 'whois'
 brew 'bytemark-client'
 
-cask 'mailmate'
 cask 'bonjour-browser'
+cask 'mailmate'
+cask 'textmate'
 
 mas 'Xcode', id: 497799835
 mas 'Keynote', id: 409183694
@@ -56,3 +57,4 @@ mas 'Pages', id: 409201541
 mas 'Dash', id: 458034879
 mas 'Telegram', id: 747648890
 mas 'Numbers', id: 409203825
+
