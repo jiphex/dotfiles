@@ -57,5 +57,4 @@ mas 'Pages', id: 409201541
 mas 'Dash', id: 458034879
 mas 'Telegram', id: 747648890
 mas 'Numbers', id: 409203825
-mas 'Day One', id: 1055511498 
-
+mas 'Day One', id: 1055511498
