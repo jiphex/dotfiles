@@ -46,6 +46,7 @@ brew 'bytemark-client'
 cask 'bonjour-browser'
 cask 'mailmate'
 cask 'textmate'
+cask 'dayone-cli'
 
 mas 'Xcode', id: 497799835
 mas 'Keynote', id: 409183694
