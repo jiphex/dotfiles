@@ -47,15 +47,10 @@ cask 'bonjour-browser'
 cask 'mailmate'
 cask 'textmate'
 cask 'dayone-cli'
+cask 'tunnelblick'
 
-mas 'Xcode', id: 497799835
-mas 'Keynote', id: 409183694
 mas 'The Unarchiver', id: 425424353
-mas 'iPhoto', id: 408981381
 mas 'Microsoft Remote Desktop', id: 715768417
 mas 'Tweetbot', id: 557168941
-mas 'Pages', id: 409201541
-mas 'Dash', id: 458034879
 mas 'Telegram', id: 747648890
-mas 'Numbers', id: 409203825
 mas 'Day One', id: 1055511498
