@@ -44,10 +44,14 @@ brew 'whois'
 brew 'bytemark-client'
 
 cask 'bonjour-browser'
-cask 'mailmate'
-cask 'textmate'
+cask 'cask'
 cask 'dayone-cli'
+cask 'google-chrome'
+cask 'mailmate'
+cask 'sonos'
+cask 'textmate'
 cask 'tunnelblick'
+cask 'vlc'
 
 mas 'The Unarchiver', id: 425424353
 mas 'Microsoft Remote Desktop', id: 715768417
