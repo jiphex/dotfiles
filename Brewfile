@@ -6,17 +6,18 @@ brew 'autoconf'
 brew 'automake'
 brew 'axel'
 brew 'bazaar'
+brew 'bytemark-client'
 brew 'caddy'
 brew 'coreutils'
 brew 'docbook'
 brew 'ffmpeg'
 brew 'gnu-sed'
 brew 'gnupg2'
-brew 'go'
 brew 'gnutls'
-brew 'httpie'
+brew 'go'
 brew 'gpg-agent'
 brew 'graphviz'
+brew 'httpie'
 brew 'hugo'
 brew 'imagemagick'
 brew 'ipcalc'
@@ -38,10 +39,9 @@ brew 'the_silver_searcher'
 brew 'watch'
 brew 'weighttp'
 brew 'wget'
+brew 'whois'
 brew 'xz'
 brew 'youtube-dl'
-brew 'whois'
-brew 'bytemark-client'
 
 cask 'bonjour-browser'
 cask 'cask'
@@ -53,8 +53,8 @@ cask 'textmate'
 cask 'tunnelblick'
 cask 'vlc'
 
-mas 'The Unarchiver', id: 425424353
-mas 'Microsoft Remote Desktop', id: 715768417
-mas 'Tweetbot', id: 557168941
-mas 'Telegram', id: 747648890
 mas 'Day One', id: 1055511498
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'Telegram', id: 747648890
+mas 'The Unarchiver', id: 425424353
+mas 'Tweetbot', id: 557168941
