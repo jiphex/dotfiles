@@ -52,8 +52,8 @@ autocmd FileType EDITMSG set formatoptions=tq textwidth=72
 set nobackup
 set noswapfile
 
-" go on then, we'll take mouse support.
-set mouse=a
+" go on then, we'll take mouse support, but only in insert mode
+set mouse=i
 
 " better colour scheme
 colors pablo
@@ -71,7 +71,7 @@ set hidden
 " no wrapping lines thanks
 set nowrap
 " but we'll have hashes at the end of the line where we dont wrap.
-set listchars=tab:»·,trail:·,extends:#,nbsp:·
+set listchars=tab:Â»Â·,trail:Â·,extends:#,nbsp:Â·
 
 " tabs are 4 spaces ffs.
 set tabstop=4
