@@ -83,6 +83,7 @@
       provider = "geoclue2";
       latitude = "50.94";
       longitude = "0.95";
+      package = pkgs.redshift-wlr;
     };
     screen-locker = {
       enable = false;
@@ -96,6 +97,7 @@
         password_cmd = "cat .config/spotify.passwd";
         device_name = "drno";
         zeroconf_port = "33999";
+        bitrate = "320";
       };
     };
   };
@@ -105,7 +107,7 @@
       owner = "jiphex";
       repo = "dotfiles";
       rev = "master";
-      sha1 = "ky3cwmwddmv6a99cqm4ka2s6xi16wnv3";
+      sha1 = "4nlkms9cmgp5jwc0w6jsk4jb3gg255pp";
     };
     "xfce4/terminal/terminalrc".text = ''
       [Configuration]
