@@ -20,11 +20,14 @@
     #cheese
     cargo
     clang
+    cura
     docker
     feh
     fira-code
     fira-code-symbols
+    firefox-bin
     freerdp
+    hexchat
     inkscape
     jq
     kitty
@@ -87,6 +90,9 @@
     };
     screen-locker = {
       enable = false;
+    };
+    syncthing = {
+      enable = true;
     };
   };
   services.spotifyd = {
@@ -167,6 +173,11 @@
     enable = true;
     config = rec {
       modifier = "Mod4";
+      input = {
+        "*" = {
+          xkb_layout = "gb";
+        };
+      };
       terminal = "kitty";
 #      fonts = ["DejaVu Sans Mono 8"];
 #      bars = [
@@ -191,10 +202,10 @@
 #        "${modifier}+Shift+l" = "move up";
 #        "${modifier}+Shift+semicolon" = "move right";
         "${modifier}+Shift+Return" = "exec qutebrowser";
-        #"XF86AudioRaiseVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status";
-        #"XF86AudioLowerVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status";
-        #"XF86AudioAudioMute" = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status";
-        #"XF86AudioAudioMicMute" = "exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status";
+        "${modifier}+Ctrl+l" = "exec 'swaylock -f -c 000000'";
+        "XF86AudioRaiseVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status";
+        "XF86AudioLowerVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status";
+        "XF86AudioMute" = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status";
       };
       startup = [
         { command = "swaybg -i '${pkgs.pantheon.elementary-wallpapers}/share/backgrounds/Photo by SpaceX.jpg'"; always=true; }
@@ -202,8 +213,6 @@
     };
     extraConfig = ''
       # Use pactl to adjust volume in PulseAudio.
-      input keyboard0 xkb_layout gb
-      input keyboard1 xkb_layout gb
       set $refresh_i3status killall -SIGUSR1 i3status
     '';
   };
