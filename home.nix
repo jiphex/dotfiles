@@ -155,13 +155,19 @@
     #'';
   };
 
-  ## not in hm yet
-  #programs.kitty = {
-  #  enable = true;
-  #  settings = {
-  #    term = "xterm-color";
-  #  };
-  #};
+  programs.kitty = {
+    enable = true;
+    settings = {
+      term = "xterm-color";
+      font_family = "Fira Code";
+      font_size = "12.0";
+      disable_ligatures = "never";
+      scrollback_lines = "2000";
+      url_color = "#0087bd";
+      url_style = "curly";
+      copy_on_select = "yes";
+    };
+  };
 
   # Force the terminal to be xfce4
   pam.sessionVariables = {
