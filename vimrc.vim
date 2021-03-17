@@ -107,12 +107,6 @@ cmap w!! w !sudo tee % >/dev/null
 " show the status bar
 set laststatus=2
 
-" use hjkl damnit, no fricking cursors.
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
 " faster terminals thanks
 set ttyfast
 
